@@ -1,6 +1,7 @@
 mod utils;
 mod fundamentos;
 mod tipos;
+mod controle;
 
 use std::process::exit;
 use utils::terminal::{exibir_menu, limpar_tela};
@@ -22,7 +23,7 @@ fn main() {
         match selecionado {
             1 => fundamentos::executar(),
             2 => tipos::executar(),
-            3 => println!("3"),
+            3 => controle::executar(),
             4 => println!("4"),
             5 => println!("5"),
             _ => exit(0),
