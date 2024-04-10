@@ -3,6 +3,7 @@ mod fundamentos;
 mod tipos;
 mod controle;
 mod funcoes;
+mod ownership;
 
 use std::process::exit;
 use utils::terminal::{exibir_menu, limpar_tela};
@@ -26,7 +27,7 @@ fn main() {
             2 => tipos::executar(),
             3 => controle::executar(),
             4 => funcoes::executar(),
-            5 => println!("5"),
+            5 => ownership::executar(),
             _ => exit(0),
         }
     }
