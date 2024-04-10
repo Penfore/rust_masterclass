@@ -2,6 +2,7 @@ mod utils;
 mod fundamentos;
 mod tipos;
 mod controle;
+mod funcoes;
 
 use std::process::exit;
 use utils::terminal::{exibir_menu, limpar_tela};
@@ -24,7 +25,7 @@ fn main() {
             1 => fundamentos::executar(),
             2 => tipos::executar(),
             3 => controle::executar(),
-            4 => println!("4"),
+            4 => funcoes::executar(),
             5 => println!("5"),
             _ => exit(0),
         }
